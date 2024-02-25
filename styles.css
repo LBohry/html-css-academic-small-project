@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content section */
+#destinations {
+    display: flex;
+    overflow-x: scroll;
+    /* Enable horizontal scrolling */
+    padding: 20px;
+}
+
+/* Individual destination styling */
+.destination {
+    flex: 0 0 auto;
+    /* Let the width adjust to content */
+    max-width: 300px;
+    /* Set a maximum width */
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Destination images */
+.destination img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
