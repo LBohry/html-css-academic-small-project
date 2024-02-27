@@ -91,7 +91,6 @@ header {
 #destinations {
     display: flex;
     overflow-x: scroll;
-    /* Enable horizontal scrolling */
     padding: 20px;
 }
 
@@ -220,4 +219,21 @@ form input[type="submit"]:hover {
 .contact-header {
     padding: 20px;
     text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
 }
