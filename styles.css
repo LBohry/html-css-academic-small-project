@@ -1,7 +1,6 @@
 /* styles.css */
 
 body,
-h1,
 h2,
 h3,
 p,
@@ -191,6 +190,7 @@ form input[type="checkbox"] {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="password"],
 form textarea {
     width: 100%;
     padding: 10px;
@@ -246,3 +246,66 @@ th {
     background-color: #333;
     color: white;
 }
+
+.login-form {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background-color: #4cae4c;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+.loginh1 {
+    text-align: center;
+}
+body > .centered-container {
+    width: 100%; 
+    max-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+.loginh1 {
+    text-align: center;
+    width: 100%;
+}
+
