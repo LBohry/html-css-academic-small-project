@@ -6,23 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Sousse - Explore Tunisia</title>
+    <script>
+        window.onload = function () {
+            var date = new Date();
+            var welcomeMessage = "marhbe byk fi soussa, date lyoum : " + date.toLocaleDateString();
+            alert(welcomeMessage);
+        }
+
+        function handleMouseOver(event) {
+            event.target.style.color = "red";
+        }
+
+        function handleMouseOut(event) {
+            event.target.style.color = "";
+        }
+    </script>
 </head>
 
 <body>
-    <header>
+    <header onmouseover="handleMouseOver(event)" onmouseout="handleMouseOut(event)">
         <h1>Sousse</h1>
         <p>Charming Coastal City</p>
     </header>
-    <section id="overview" class="overview-section">
-        <div class="text">
+    <section id="overview" class="overview-section" onmouseover="handleMouseOver(event)"
+        onmouseout="handleMouseOut(event)" ">
+        <div class=" text">
 
-            <h2>Overview</h2>
-            <p>Sousse, located on the Gulf of Hammamet, is a vibrant coastal city with a rich history and a mix of
-                modern
-                and traditional elements.</p>
+        <h2>Overview</h2>
+        <p>Sousse, located on the Gulf of Hammamet, is a vibrant coastal city with a rich history and a mix of
+            modern
+            and traditional elements.</p>
         </div>
     </section>
-    <section id="medina" class="destination-section">
+    <section id="medina" class="destination-section" onmouseover="handleMouseOver(event)"
+        onmouseout="handleMouseOut(event)">
         <div class="text">
 
             <h2>Medina and Old Town</h2>
@@ -31,7 +48,8 @@
         </div>
         <img src="../pictures/sousse.jpg" alt="Sousse Medina" class="destination-blog-image">
     </section>
-    <section id="beaches" class="destination-section">
+    <section id="beaches" class="destination-section" onmouseover="handleMouseOver(event)"
+        onmouseout="handleMouseOut(event)">
         <div class="text">
 
             <h2>Beaches and Promenade</h2>

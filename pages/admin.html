@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Admin Page for Users</title>
+</head>
+
+<body>
+    <h1>Users</h1>
+
+    <table id="usersTable">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Date</th>
+        </tr>
+    </table>
+
+    <script>
+        function loadUsers() {
+            // Fetch the users from the server
+            fetch('fetch_users.php')
+                .then(response => response.json())
+                .then(users => {
+                    var table = document.querySelector('#usersTable');
+
+                    // Add table rows
+                    users.forEach(user => {
+                        var tr = document.createElement('tr');
+
+                        var tdUsername = document.createElement('td');
+                        tdUsername.textContent = user.username;
+                        tr.appendChild(tdUsername);
+
+                        var tdEmail = document.createElement('td');
+                        tdEmail.textContent = user.email;
+                        tr.appendChild(tdEmail);
+
+                        var tdPassword = document.createElement('td');
+                        tdPassword.textContent = user.password;
+                        tr.appendChild(tdPassword);
+
+                        var tdDate = document.createElement('td');
+                        tdDate.textContent = user.date;
+                        tr.appendChild(tdDate);
+
+                        table.appendChild(tr);
+                    });
+                });
+        }
+
+        loadUsers();
+    </script>
+</body>
+
+</html>
