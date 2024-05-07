@@ -35,42 +35,42 @@
     </header>
     <section id="destinations">
         <div class="destination" id="hammamet">
-            <a href="../pages/hammamet.php">
+            <a href="../pages/hammamet.html">
                 <img src="../pictures/hammamet.jpg" alt="Hammamet">
                 <h3>Hammamet</h3>
                 <p>Charming beach town with white-sand beaches, ancient ruins, and the Medina Mediterrane.</p>
             </a>
         </div>
         <div class="destination" id="eljem">
-            <a href="../pages/jemm.php">
+            <a href="../pages/jemm.html">
                 <img src="../pictures/jemm.jpg" alt="El Jem">
                 <h3>El Jem</h3>
                 <p>Home to the El Jem Amphitheatre, the second-largest colosseum in the Roman world.</p>
             </a>
         </div>
         <div class="destination" id="kairouan">
-            <a href="../pages/kairaouen.php">
+            <a href="../pages/kairaouen.html">
                 <img src="../pictures/kairaouen.jpg" alt="Kairouan">
                 <h3>Kairouan</h3>
                 <p>Explore the medina, protected by monumental walls and gates.</p>
             </a>
         </div>
         <div class="destination" id="sousse">
-            <a href="../pages/sousse.php">
+            <a href="../pages/sousse.html">
                 <img src="../pictures/sousse.jpg" alt="Sousse">
                 <h3>Sousse</h3>
                 <p>Stunning beach, golf course, Sousse Archaeological Museum, and the historic medina.</p>
             </a>
         </div>
         <div class="destination" id="monastir">
-            <a href="../pages/monastir.php" >
+            <a href="../pages/monastir.html" >
                 <img src="../pictures/monastir.jpg" alt="Monastir">
                 <h3>Monastir</h3>
                 <p>Historic city with a stunning ribat, beautiful beaches, and vibrant markets.</p>
             </a>
         </div>
         <div class="destination" id="djerba">
-            <a href="../pages/djerba.php">
+            <a href="../pages/djerba.html">
                 <img src="../pictures/djerba.jpg" alt="Djerba">
                 <h3>Djerba</h3>
                 <p>Explore the largest island in North Africa with its rich history and beautiful beaches.</p>

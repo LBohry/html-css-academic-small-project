@@ -12,22 +12,30 @@ function signup($data)
     $password = isset($data['password']) ? $data['password'] : '';
     $password2 = isset($data['password2']) ? $data['password2'] : '';
 
-    //checks if username starts and ends only with chars 
-    if(!preg_match('/^[a-zA-Z]+$/', $username)){
-        $errors[] = "Please enter a valid username";
-    }
-    //filter mail
-    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-        $errors[] = "Please enter a valid email";
-    }
-    //checks if password length>4
-    if(strlen(trim($password)) < 4){
-        $errors[] = "Password must be at least 4 chars long";
-    }
-    //checks if password matches
-    if($password != $password2){
-        $errors[] = "Passwords must match";
-    }
+	if(!preg_match('/^[a-zA-Z]+$/', $username)){
+		$errors[] = "Please enter a valid username";
+	}
+	//filter mail
+	if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+		$errors[] = "Please enter a valid email";
+	}
+	//checks if password length>4
+	if(strlen(trim($password)) < 4){
+		$errors[] = "Password must be at least 4 chars long";
+	}
+	//checks if password matches
+	if($password != $password2){
+		$errors[] = "Passwords must match";
+	}
+	//checks if password contains at least one number and one letter and one special caratere
+	if(!preg_match('/[A-Za-z].*[0-9]|[0-9].*[A-Za-z]/', $password)){
+		$errors[] = "Password must contain at least one letter and one number";
+	}
+	//checks if password contains at least one special character
+	if(!preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $password)){
+		$errors[] = "Password must contain at least one special character";
+	}
+	
 
     // Only run the database check if email is valid to prevent the warning
     if(filter_var($email,FILTER_VALIDATE_EMAIL)){
@@ -113,19 +121,4 @@ function database_run($query,$vars = array())
 	}
 
 	return false;
-}
-function check_login($redirect = true){
-
-	if(isset($_SESSION['USER']) && isset($_SESSION['LOGGED_IN'])){
-
-		return true;
-	}
-
-	if($redirect){
-		header("Location: login.php");
-		die;
-	}else{
-		return false;
-	}
-	
 }
