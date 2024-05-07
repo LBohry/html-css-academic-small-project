@@ -37,9 +37,18 @@ function jawnabehi(event){
         document.getElementsByTagName("img")[0].width=350;
         document.getElementsByTagName("img")[0].height=350;
     }
+    function f6(){
+        console.log(this.event)
+        var a=document.getElementById("id3").textContent;
+        var b=parseInt(a);
+        document.getElementById("id3").textContent=b+1;
+    }
   
     document.getElementsByTagName("img")[0].addEventListener("mouseleave",f8);
     document.getElementsByTagName("img")[0].addEventListener("mouseenter",f7);
+    document.getElementById("id3").addEventListener("mouseup",f6);
+    document.getElementById("id3").addEventListener("mousedown",f6);
+    
    ;
 }
 </script>
@@ -53,6 +62,7 @@ function jawnabehi(event){
             <input type="button" value="ouvrir" onclick="ouvrirfenretre()"/>
             <input type="button" value="fermer" onclick="fermerfenretre()"/>
             <input type="button" value="deplacer" onclick="deplacerfenretre()"/>
+            <p id="id3">0</p>
             <h2>Overview</h2>
             <p>Djerba, situated off the coast of Tunisia, is a beautiful island in the Mediterranean Sea. With
                 historical
