@@ -62,7 +62,6 @@
             var data = JSON.parse(document.getElementById('data').textContent);
             var table = document.querySelector('#destinationTable');
 
-            // Add table rows
             data.destinations.forEach(destination => {
                 var tr = document.createElement('tr');
 

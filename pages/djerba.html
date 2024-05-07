@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Djerba - Explore Tunisia</title>
 </head>
-
+<script>
+    function DateAujourdhui() {
+    var jours = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+    var mois = new Array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
+    var date = new Date();
+    return ("<h4>" + jours[date.getDay()] + ", "
+            + date.getDate() + " "
+            + mois[date.getMonth()] + ", "
+            + date.getFullYear() + "</h4>");
+}
+function ouvrirfenretre(){
+    fenetre=window.open("hammamet.html",'width=400,height=200')
+    fenetre.focus();
+}
+        function fermerfenretre(){
+            fenetre.close();
+        }
+        function deplacerfenretre(){
+            fenetre.moveBy(-100,-200);
+            fenetre.focus();
+        }
+document.addEventListener("DOMContentLoaded",jawnabehi);
+function jawnabehi(event){
+    function f7(){
+        document.getElementsByTagName("img")[0].width=120;
+        document.getElementsByTagName("img")[0].height=120;
+    }
+    function f8(){
+        document.getElementsByTagName("img")[0].width=350;
+        document.getElementsByTagName("img")[0].height=350;
+    }
+  
+    document.getElementsByTagName("img")[0].addEventListener("mouseleave",f8);
+    document.getElementsByTagName("img")[0].addEventListener("mouseenter",f7);
+   ;
+}
+</script>
 <body>
     <header>
         <h1>Djerba</h1>
@@ -15,7 +50,9 @@
     </header>
     <section id="overview" class="overview-section">
         <div class="text">
-
+            <input type="button" value="ouvrir" onclick="ouvrirfenretre()"/>
+            <input type="button" value="fermer" onclick="fermerfenretre()"/>
+            <input type="button" value="deplacer" onclick="deplacerfenretre()"/>
             <h2>Overview</h2>
             <p>Djerba, situated off the coast of Tunisia, is a beautiful island in the Mediterranean Sea. With
                 historical
@@ -52,5 +89,8 @@
         <p><a href="mailto:contact@exploretunisia.com" style="color: white;">Email: contact@exploretunisia.com</a></p>
     </footer>
 </body>
+<script language="JavaScript">
+   document.write(DateAujourdhui()); 
+</script>
 
 </html>
