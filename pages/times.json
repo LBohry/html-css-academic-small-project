@@ -1,0 +1,34 @@
+{
+    "destinations": [
+        {
+            "name": "Djerba",
+            "weekdays": "9:00 AM - 5:00 PM",
+            "weekends": "10:00 AM - 4:00 PM"
+        },
+        {
+            "name": "Hammamet",
+            "weekdays": "10:00 AM - 6:00 PM",
+            "weekends": "11:00 AM - 5:00 PM"
+        },
+        {
+            "name": "El Jem",
+            "weekdays": "9:00 AM - 5:00 PM",
+            "weekends": "10:00 AM - 4:00 PM"
+        },
+        {
+            "name": "Kairouan",
+            "weekdays": "10:00 AM - 6:00 PM",
+            "weekends": "11:00 AM - 5:00 PM"
+        },
+        {
+            "name": "Monastir",
+            "weekdays": "9:00 AM - 5:00 PM",
+            "weekends": "10:00 AM - 4:00 PM"
+        },
+        {
+            "name": "Sousse",
+            "weekdays": "10:00 AM - 6:00 PM",
+            "weekends": "11:00 AM - 5:00 PM"
+        }
+    ]
+}
