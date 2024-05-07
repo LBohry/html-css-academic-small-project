@@ -18,7 +18,7 @@
             <th>Date</th>
         </tr>
         <?php
-        require "functions.php";
+        require "database.php";
         $errors = array();
         $sql = "SELECT username, email, password, date FROM users";
         $stmt = $pdo->query($sql);

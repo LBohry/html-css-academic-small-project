@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require "functions.php";
+include("database.php");
 $errors = array();
 $sql = "SELECT username, email, password, date FROM users";
 $stmt = $pdo->query($sql);

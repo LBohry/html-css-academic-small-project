@@ -27,7 +27,7 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="../pages/contact.php">Contact</a></li>
                 <li><a href="../pages/terms-of-use.pdf">Terms of use</a></li>
-                <li><a href="../pages/admin.html">Admin</a></li>
+                <li><a href="../pages/admin.php">Admin</a></li>
                 <li><a href="../pages/logout.php">Log out</a></li>
             </ul>
         </div>
