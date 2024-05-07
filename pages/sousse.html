@@ -13,6 +13,12 @@
             alert(welcomeMessage);
         }
 
+        window.onunload = function () {
+            var date = new Date();
+            var byemessage = "marhbe byk fi ayy wa9t, date lkhrouk : " + date.toLocaleDateString();
+            alert(byemessage);
+        }
+
         function handleMouseOver(event) {
             event.target.style.color = "red";
         }
